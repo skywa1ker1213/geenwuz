@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER STARTS-->
+    <header>
+        <!-- TOP BAR STARTS -->
+        <div class="top__bar">
+            <div class="container">
+                <div class="top__bar-content">
+                    <a href="index.html">
+                        <img src="img/greenwuz-logo.png" alt="">
+                    </a>
+
+                    <h1>
+                        GREEN<span>WUZ</span>
+                    </h1>
+
+                    <button>Войти</button>
+                </div>
+            </div>
+        </div>
+        <!-- TOP BAR END -->
+
+        <!-- NAV STARTS -->
+        <nav>
+            <div class="container">
+                <div class="nav__block">
+                    <a href="index.html">
+                        <img src="img/greenwuz-logo.png" alt="">
+                    </a>
+                    <ul class="nav__list">
+                        <div>
+                            <a href="#">
+                                <img class="mobilerBar-logo" src="img/greenwuz-logo.png" alt="">
+                            </a>
+                            <i class="close fa-solid fa-xmark"></i>
+                        </div>
+
+                        <li class="active"><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="products.html">Продукты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="buttons">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn" id="selectedOption">RU <i
+                                    class="fa-solid fa-sort-down"></i></button>
+
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" onclick="selectOption(this)">RU</a>
+                                <a href="#" onclick="selectOption(this)">UZ</a>
+                                <a href="#" onclick="selectOption(this)">EN</a>
+                            </div>
+                        </div>
+
+                        <i class="open fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+    <!-- HEADER END-->
+
+
+    <main>
+        <section class="success">
+            <div class="container">
+                <div class="success-content">
+                    <h2>
+                        <span>Вы успешно заказали</span> Мы свяжемся с
+                        вами в ближайшее время
+                    </h2>
+
+                    <img src="img/success-img.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="#">
+                        <img src="img/footer__logo.png" alt="">
+                    </a>
+
+                    <h3>
+                        <a href="#">
+                            г. Янгиюль, рядом с новым мостом,
+                            напротив "TEXNO CITY" здание
+                            "ZAFFA EDU"
+                        </a>
+                    </h3>
+                </div>
+
+                <div class="footer__nav">
+                    <a href="javascript:void(0)" id="backToTop" class="back-to-top" style="display:none;">
+                        <i class="icon__arrow-up fa-solid fa-chevron-up"></i>
+                    </a>
+
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <div>
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">@greenwuz.uz</a>
+                    </div>
+
+                    <h4>
+                        <a href="#">+998 (99) 404 34 44</a>
+                        <a href="#">+998 (99) 800 38 78</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="libs/jquery.min.js"></script>
+
+    <!-- LAYOUT MAIN CUSTOM JS -->
+    <script src="js/main.js"></script>
+
+
+    <!-- FONT AWESOME -->
+    <script src="libs/FontAwesome.js"></script>
+</body>
+
+</html>

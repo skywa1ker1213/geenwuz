@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+
+    <!-- LIGTHGALLERY CSS -->
+    <link rel="stylesheet" href="css/lightgallery.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- MAIN CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER STARTS-->
+    <header>
+        <!-- TOP BAR STARTS -->
+        <div class="top__bar">
+            <div class="container">
+                <div class="top__bar-content">
+                    <a href="index.html">
+                        <img src="img/greenwuz-logo.png" alt="">
+                    </a>
+
+                    <h1>
+                        GREEN<span>WUZ</span>
+                    </h1>
+
+                    <button>Войти</button>
+                </div>
+            </div>
+        </div>
+        <!-- TOP BAR END -->
+
+        <!-- NAV STARTS -->
+        <nav>
+            <div class="container">
+                <div class="nav__block">
+                    <a href="index.html">
+                        <img src="img/greenwuz-logo.png" alt="">
+                    </a>
+
+                    <ul class="nav__list">
+                        <div>
+                            <a href="#">
+                                <img class="mobilerBar-logo" src="img/greenwuz-logo.png" alt="">
+                            </a>
+                            <i class="close fa-solid fa-xmark"></i>
+                        </div>
+
+
+                        <li><a href="index.html">Главная</a></li>
+                        <li class="active"><a href="about.html" class="active">О нас</a></li>
+                        <li><a href="products.html">Продукты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="buttons">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn" id="selectedOption">RU <i
+                                    class="fa-solid fa-sort-down"></i></button>
+
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" onclick="selectOption(this)">RU</a>
+                                <a href="#" onclick="selectOption(this)">UZ</a>
+                                <a href="#" onclick="selectOption(this)">EN</a>
+                            </div>
+                        </div>
+
+                        <i class="open fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+    <!-- HEADER END-->
+
+    <!-- MAIN START -->
+    <div class="wrapper">
+        <div class="content">
+            <main>
+                <section class="about">
+                    <div class="continer">
+                        <h2>О нас</h2>
+                    </div>
+                </section>
+
+                <section class="allProducts">
+                    <div class="container">
+                        <h2>Все наши продукты</h2>
+
+
+
+                        <!-- Swiper -->
+                        <div class="swiper aboutSwipera">
+                            <div class="swiper-wrapper" id="lightgallery">
+                                <a href="img/mainProduct-img.png">
+                                <div class="swiper-slide">
+                                        <div>
+                                            <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                            <h4>Мясо</h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="img/mainProduct-img.png">
+                                <div class="swiper-slide">
+                                        <div>
+                                            <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                            <h4>Мясо</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                                                
+                                <a href="img/mainProduct-img.png">
+                                <div class="swiper-slide">
+                                        <div>
+                                            <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                            <h4>Мясо</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                                                
+                                <a href="img/mainProduct-img.png">
+                                <div class="swiper-slide">
+                                        <div>
+                                            <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                            <h4>Мясо</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                                                                
+                                <a href="img/mainProduct-img.png">
+                                <div class="swiper-slide">
+                                        <div>
+                                            <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                            <h4>Мясо</h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- MAIN END -->
+
+
+
+    <!-- LAYOUT JQUERY JS -->
+    <script src="libs/jquery.min.js"></script>
+
+    <!-- LAYOUT GSAP JS -->
+    <script src="libs/gsap.min.js"></script>
+
+    <!-- LAYOUT SCROLLTRIGGER JS -->
+    <script src="libs/ScrollTrigger.min.js"></script>
+
+    <!-- LAYOUT SCROLLSMOOTHER JS -->
+    <script src="libs/ScrollSmoother.min.js"></script>
+    <script src="js/gsamScrollSmother.js"></script>
+
+    <!-- LIGTHGALLERY JS -->
+    <script src="js/lightgallery.js"></script>
+
+    <!-- LAYOUT SWIPER JS -->
+    <script src="libs/swiper-bundle.min.js"></script>
+    <script src="js/about/aboutSwiper.js"></script>
+
+    <!-- LAYOUT MAIN JS -->
+    <script src="js/main.js"></script>
+
+
+    <!-- LAYIOUT FONTAWESOME JS -->
+    <script src="libs/FontAwesome.js"></script>
+
+
+    <script>
+        var imagPop = document.getElementById("lightgallery");
+        lightGallery(imagPop);
+    </script>
+</body>
+
+</html>
